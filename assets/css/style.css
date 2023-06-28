@@ -48,9 +48,7 @@ background-color: var(--rawSienna)
   background-position: center;
 }
 
-.fp-watermark  {
-  display: none;
-}
+
 
 .fp-overflow{
   display:flex;
