@@ -8,73 +8,77 @@
 }
 
 body {
-font-family: "oxaniam", monospace;
-
+  font-family: 'Oxanium', monospace;
 }
+
+/* bootstrap overrides  */
 
 .text-success {
-color: var(--yellowGreen) !important
+  color: var(--yellowGreen) !important;
 }
 
-.border-success, .btn-success{
-border-color: var(--yellowGreen) !important
+.btn-success {
+  background-color: var(--yellowGreen);
 }
 
-.btn-success{
-background-color: var(--yellowGreen)
-
+.border-success, .btn-success {
+  border-color: var(--yellowGreen) !important;
 }
 
-
-/* used robot override */
-.text-warning{
-color: var(--rawSienna) !important
+.text-warning {
+  color: var(--rawSienna) !important;
 }
 
-.border-warning{
-border-color: var(--rawSienna) !important
+.btn-warning {
+  background-color: var(--rawSienna);
 }
 
-.btn-warning{
-background-color: var(--rawSienna)
-
+.border-warning, .btn-warning {
+  border-color: var(--rawSienna) !important;
 }
 
+.text-primary {
+  color: var(--horizon) !important;
+}
 
-.section{
-  
+.btn-primary {
+  background-color: var(--horizon);
+}
+
+.border-primary, .btn-primary {
+  border-color: var(--horizon) !important;
+}
+
+/* override fullpagejs nav dots colors */
+#fp-nav ul li a span {
+  background: white;
+}
+
+.section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-
-
-.fp-overflow{
-  display:flex;
+.fp-overflow {
+  display: flex;
   align-items: center;
-  background: rgb(19,19,19);
-background: linear-gradient(126deg, rgba(19,19,19,1) 0%, rgba(77,77,77,0.4318977591036415) 57%);
-height: 100%;
+  background: linear-gradient(90deg, rgba(0,0,0,0.8309524493391106) 0%, rgba(0,0,0,0.23151267342874648) 100%);
+  height: 100%;
 }
 
-
-#intro{
-background-image: url(../images/large/robot-on-rocks.jpg)
-
+#intro {
+  background-image: url(../images/large/robot-on-rocks.jpg);
 }
 
 #new {
-  background-image: url(../images/large/evou-robots.jpg)
-
+  background-image: url(../images/large/evou-robots.jpg);
 }
 
-
-#used{
-  background-image: url(../images/large/refurbished-robots-3.jpg)
+#used {
+  background-image: url(../images/large/refurbished-robots.jpg);
 }
 
-#contact{
-
-  background-image: url(../images/large//robots-among-us-2.jpg)
+#contact {
+  background-image: url(../images/large/robots-among-us-2.jpg);
 }
