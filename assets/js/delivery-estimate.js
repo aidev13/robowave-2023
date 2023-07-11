@@ -20,13 +20,13 @@ function getDistanceFromFactory(position) {
   var userLon = position.coords.longitude
 
   // get distance using dist. matrix API
-  fetch('https://api.distancematrix.ai/maps/api/distancematrix/json?origins=' + factoryCoordinates.lat + ',' + factoryCoordinates.lon + '&destinations=' + userLat + ',' + userLon + '&key=FfjlQNSycwguu8hTigfcqloxlIRYU')
+  fetch('https://api.distancematrix.ai/maps/api/distancematrix/json?origins=' + factoryCoordinates.lat + ',' + factoryCoordinates.lon + '&destinations=' + userLat + ',' + userLon + '&key=FfjlQNSycwguu8hTigfcqloxlIRYU&units=imperial')
     .then(function(response) {
       return response.json()
     })
     .then(function(distanceData) {
       // once we have mileage
-      var distance = distanceData.rows[0].elements[0].distance.value
+      var distance = parseFloat(distanceData.rows[0].elements[0].distance.text.split(' ')[0])
       // calculate shipping
       var total = calculateShipping(distance)
       displayTotals(total)
