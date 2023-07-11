@@ -48,4 +48,11 @@ $(document).ready(function() {
         .text(diff + " days since last error")
         .addClass(textClass)
     })
+
+    //listen for summit events on the sign up form
+    //event.preventDefault
+    //get the value out of the email input
+    //creta a user using the JOSN placeholder API
+    // IF SUSSFULLY REDIRECT TO THE THANK YOU HTML PAGE?email=[email_here]
+
   });

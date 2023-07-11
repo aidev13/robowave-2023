@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A ficticious robot company website for a Bootstrap and jQuery code-along in class" />
   <title>RoboWave 2023</title>
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap" rel="stylesheet">
@@ -174,15 +175,11 @@
             <p class="fs-3 text-white typewriter-effect">Sign up for the latest updates straight to your inbox.</p>
           </div>
           <div class="col-12 col-md-6">
-            <form class="card p-4 border-success bg-transparent text-white">
+            <form id="signUpForm" class="card p-4 border-success bg-transparent text-white">
               <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                 <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="exampleInputPassword1">
               </div>
               <button type="submit" class="btn btn-primary">Submit</button>
             </form>
@@ -205,6 +202,6 @@
   <!-- dayjs -->
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
   <!-- custom -->
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/home.js"></script>
 </body>
 </html>
